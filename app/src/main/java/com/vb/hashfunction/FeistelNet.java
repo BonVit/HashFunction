@@ -91,6 +91,7 @@ public class FeistelNet {
 
     private BitSet f(BitSet a, long k)
     {
+        k %= 16;
         long number = BitsUtills.bitSetToInt(a) % k;
 
         int[] arr = ArrayUtills.intTo4BitsArray(number);
